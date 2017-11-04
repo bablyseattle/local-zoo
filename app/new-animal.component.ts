@@ -46,13 +46,9 @@ import { Animal } from './animal.model';
           <label>Dislike:</label>
           <input #dislike class="form-control">
         </div>
-        <div class="form-group">
-        <label>Todays Date:</label>
-        <input #date class="form-control" placeholder="YYYY-MM-DD">
-        </div>
       </div>
     </div>
-    <button class="btn" (click)="submitForm(species.value, name.value, age.value, diet.value, location.value, caretakersNeeded.value, sex.value, like.value, dislike.value, date.value); species.value=''; name.value=''; diet.value=''; location.value=''; caretakersNeeded.value=''; sex.value=''; like.value=''; dislike.value=''; logButtonClicked();">Log Animal</button>
+    <button class="btn" (click)="submitForm(species.value, name.value, age.value, diet.value, location.value, caretakersNeeded.value, sex.value, like.value, dislike.value); species.value=''; name.value=''; diet.value=''; location.value=''; caretakersNeeded.value=''; sex.value=''; like.value=''; dislike.value=''; logButtonClicked();">Add Animal</button>
   </div>
   `
 })
